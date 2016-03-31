@@ -1,0 +1,30 @@
+﻿@startuml
+
+title Grade  - Activity Diagram
+
+start
+
+:get user input marks;
+
+if(90<marks<=100)
+:grade A;
+
+else if(80<marks<=90)
+:grade B;
+
+else if(70<marks<=80)
+:grade C;
+
+else if(60<marks<=70)
+:grade D;
+
+else if(50<marks<=60)
+:grade F;
+
+endif
+
+:print grade;
+
+stop
+
+@enduml
