@@ -1,0 +1,29 @@
+﻿@startuml
+
+title Play Rock Scissors Paper - Activity Diagram 
+
+start
+:get user input play; 
+
+if(r)
+    if(r)
+    :draw;
+    else if(s)
+    :win;
+    else if(p)
+    :lose;
+else if(s)
+    if(s)
+    :draw;
+    else if(p)
+    :win;
+else if(p)
+    if(p)
+    :draw;
+
+endif
+:output play result;
+
+stop
+
+@enduml
