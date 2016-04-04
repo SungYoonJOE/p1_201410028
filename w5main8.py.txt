@@ -1,0 +1,16 @@
+﻿height=1.8
+weight=75
+
+bmi=weight/(height*height)
+print bmi
+bmi=24.99
+if 20.0<=bmi and bmi<25.0:
+    print "Normal weight"
+elif 25.0<=bmi and bmi<29.9:
+    print "Overweight"
+elif 29.9<=bmi and bmi<40.0:
+    print "Obesity"
+elif 40.0<=bmi:
+    print "High obesity"
+else:
+    print "error"
