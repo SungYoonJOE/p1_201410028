@@ -1,0 +1,34 @@
+﻿@startuml
+
+title ComputeBMI - Activity Diagram 
+
+
+
+start
+
+
+:input user's weight; 
+
+
+:BMI=weight/(height*height);
+
+
+if(20<=BMI<25)
+  :Normal weight;
+
+else if(25<=BMI<29.9)
+  :Over weight;
+
+else if(29.9<=BMI<40)
+  :Obesity;
+
+else if(40<=BMI)
+  :High Obesity;
+
+endif
+
+
+stop
+
+
+@enduml
