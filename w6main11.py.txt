@@ -1,0 +1,23 @@
+﻿"""
+JSY 201410028
+20160406
+"""
+
+def ComputeLeapYear(y):
+    y=int(year)
+    if(y%4==0 and (y%100!=0 or y%400==0)):
+        result="Leap year"
+    else:
+        result="Normal year"
+    
+    print y
+    return result
+  
+def lab6():
+    ComputeLeapYear(y)
+    
+def main6():
+    lab6()
+    
+if __name__=="__main__":
+    main6() 
