@@ -1,0 +1,24 @@
+﻿@startuml
+
+title ComputeLeapyear - Activity Diagram 
+
+
+start
+
+
+:input year; 
+
+
+if (year is divided by 4 and (is not divided by 100(or is divided by 400))) then (yes)
+  :it is Leap year!!;
+
+else (no)
+  :Normal year!!!;
+
+endif
+
+
+stop
+
+
+@enduml
