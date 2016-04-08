@@ -1,0 +1,31 @@
+﻿@startuml
+
+
+title Start UP and DOWN Game - Activity Diagram 
+
+
+
+start
+
+
+:set your number; 
+
+:input user's numger;
+
+if(user's number>your number) 
+:say "Down!";
+
+else if(user's number<your number)
+:say "Up!";
+
+
+endif
+
+
+:repeat this process until user's number=your number;
+
+
+stop
+
+
+@enduml
