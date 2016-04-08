@@ -1,0 +1,24 @@
+﻿"""
+@author JSY 201410028
+@since 2016
+"""
+usernumber=raw_input("Input number")
+settingnumber=raw_input("Input number")
+
+def UpandDownGame():
+    if usernumber>settingnumber:
+        print "Down"
+    elif usernumber<settingnumber:
+        print "Up"
+    elif usernumber==settingnumber:
+        print "Right answer"
+        
+        
+def lab6(): 
+       UpandDownGame() 
+
+def main(): 
+       lab6() 
+
+if __name__=="__main__" 
+        main() 
