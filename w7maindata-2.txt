@@ -1,0 +1,23 @@
+﻿import turtle
+wn=turtle.Screen()
+t1=turtle.Turtle()
+
+t1.home()
+t1.clear()
+
+def drawSquareAtSave(size, pos):
+    tracks=list()
+    t1.penup()
+    t1.setpos(pos)
+    t1.pendown()
+    for i in range(0,4):
+        t1.forward(size)
+        t1.right(90)
+        tracks.append(t1.pos())
+    return tracks
+
+def lab7():
+    mytracks=drawSquareAtSave(size,pos)
+    print mytracks
+def main():
+    lab7()
