@@ -1,0 +1,24 @@
+﻿import turtle
+wn=turtle.Screen()
+t1=turtle.Turtle()
+
+t1.home()
+t1.clear()
+
+tracks=list()
+tracks=[(0,0),(0,-100),(-100,-100),(-100,0)]
+
+def drawSquareFrom(tracks):
+    for i in range(0,4):
+        t1.penup()
+        t1.setpos(tracks[i])
+        t1.pendown()
+        t1.right(90)
+        t1.fd(100)
+
+def lab7():
+    mytracks=drawSquareFromList(tracks)
+    print mytracks
+
+def main():
+    lab7()
