@@ -1,0 +1,15 @@
+﻿import turtle
+wn=turtle.Screen()
+t1=turtle.Turtle()
+
+t1.home()
+t1.clear()
+
+def PushBottlecap(num):
+    t1.speed(2)
+    t1.penup()
+    t1.setpos(-465,200)
+    t1.pendown()
+    t1.fd(num)
+    
+PushBottlecap(800)
