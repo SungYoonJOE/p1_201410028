@@ -9,6 +9,7 @@
     print d
 
 def countDigitsLetters(word):
+    word='jongno hongjimun 2gil 20'
     d=dict()
     d['alpha']=0
     d['digit']=0
