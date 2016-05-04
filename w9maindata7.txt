@@ -1,0 +1,26 @@
+def Findhomeappliances(x,y):
+    x=set()
+    y=set()
+    x={'TV', 'phone', 'camera', 'table', 'mixer', 'audio', 'cd player', 'light', 'computer', 'iron', 'sofa'}
+    y={'coffee machine', 'radio', 'camera', 'running machine', 'ramp', 'computer', 'iron', 'sofa'}
+    y-x
+
+
+def lab9-3():
+     Findhomeappliances(x,y)
+     
+ 
+def main():
+    lab9-3()
+ 
+     
+ 
+if__name__=="__main__":
+     main()
+ 
+ 
+
+
+
+
+
