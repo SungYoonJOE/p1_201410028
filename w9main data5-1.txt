@@ -8,11 +8,34 @@
             d[c]=d[c]+1
     print d
 
-def lab9():
+def countDigitsLetters(word):
+    d=dict()
+    d['alpha']=0
+    d['digit']=0
+    for c in word:
+        if c.isalpha()==True:
+            d['alpha']+=1
+        elif c.isdigit()==True:
+            d['digit']+=1
+    print d 
+    %matplotlib inline
+
+    import matplotlib
+    import matplotlib.pyplot as plt
+
+    plt.bar(range(len(d)),d.values(),align='center')
+    plt.xticks(range(len(d)),list(d.keys()))
+    plt.show()
+
+def lab8-1():
     charCount()
     
+def lab8-2():
+    countDigitsLetters()
+    
 def main():
-    lab9()
-
+    lab8-1()
+    lab8-2()
+    
 if__name__=="__main__":
     main()
