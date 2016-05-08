@@ -1,0 +1,18 @@
+﻿def FindNearestStation(Locations):
+    import math
+    locations=list()
+    locations=[(37.575774, 126.973518),(37.571601, 126.976462),(37.574495, 126.957864),(37.576598, 126.985483),(37.565898, 126.966650),(37.570229, 126.983056)]
+
+    for i in range(0,len(Locations)):
+        distance=math.sqrt((loc[0][0]-loc[i][0])**2+(loc[0][1]-loc[i][1])**2)
+        distances.append(distance)
+        print min(distances)
+        
+def lab10_8():
+    FindNearestStation(Locations)
+    
+def main():
+    lab10_8()
+
+if __name__=="__main__":
+    main()
