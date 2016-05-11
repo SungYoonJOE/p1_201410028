@@ -68,7 +68,23 @@ def CheckPercentage():
             sum=sum+1
     print sum
     print (float(sum)/len(data))*100 
-    
+
+def AverageGrade():
+    Grades=list()
+    Grades=[["English",100],["Math",200],["English",200],["Math",200],["English",100],["Math",300]]
+    SumE=0
+    for i in range(0,3):
+        SumE=SumE+Grades[i*2][1]
+    print SumE
+    AverageE=float(SumE)/(len(Grades)/2)
+    print AverageE
+    SumM=0
+    for i in range(0,3):
+        SumM=SumM+Grades[i*2+1][1]
+    print SumM
+    AverageM=float(SumM)/(len(Grades)/2)
+    print AverageM    
+
 def lab10_8():
     FindNearestStation(Locations)
     
@@ -78,10 +94,14 @@ def lab10_9():
 def lab10_10():
     CheckPercentage()
     
+def lab10_11():
+    AverageGrade()
+    
 def main():
     lab10_8()
     lab10_9()
     lab10_10()
+    lab10_11()
     
 if __name__=="__main__":
     main()
