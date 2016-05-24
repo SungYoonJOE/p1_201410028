@@ -1,0 +1,53 @@
+﻿%%writefile python.txt 
+Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.
+[23][24] Its design philosophy emphasizes code readability,
+and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java.
+[25][26] The language provides constructs intended to enable clear programs on both a small and large scale.[27]
+
+%load python.txt
+Python is a widely used high-level, general-purpose, interpreted, dynamic programming language.
+[23][24] Its design philosophy emphasizes code readability,
+and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java.
+[25][26] The language provides constructs intended to enable clear programs on both a small and large scale.[27]
+
+
+import os
+mydir=os.getcwd() 
+print mydir
+
+
+filename='python.txt'
+print filename
+
+
+myfile=open('python.txt')
+i=0
+for line in myfile:  
+    print line
+    i+=1
+myfile.close()
+print "lines=",i
+
+
+mydir=os.getcwd()
+filename='python.txt'
+myfilename=os.path.join(mydir, filename)
+print myfilename
+
+
+myfile=open(myfilename)
+for line in myfile:
+    print line
+myfile.close()
+
+
+myfile=open(myfilename,'r')
+contents=myfile.readlines() 
+myfile.close()
+
+
+myfile=open(myfilename, 'r')
+for line in myfile:
+    if line.find('Python')>=0:
+        print line
+myfile.close()
