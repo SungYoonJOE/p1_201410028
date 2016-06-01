@@ -1,0 +1,34 @@
+﻿class Dog(object):
+    def __init__(self,name):
+        self.name=name
+    def getName(self):
+        print "my dog name is ", self.name
+    def talk(self):
+        print self.name, "mung mung..." 
+
+class ShihTzuDog(object):
+    def __init__(self,name):
+        self.name=name
+    def talk(self):
+        print self.name, "si si..."
+
+
+class Maltese(object):
+    def __init__(self,name):
+        self.name=name
+    def talk(self):
+        print self.name, "mal mal..."
+
+mydog=Dog('Dog는')
+mydog.talk()
+Dog는 mung mung...
+
+
+mydog=ShihTzuDog('시츄는')
+mydog.talk()
+시츄는 si si...
+
+
+mydog=Maltese('말티즈는')
+mydog.talk()
+말티즈는 mal mal...
